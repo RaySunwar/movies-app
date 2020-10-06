@@ -27,7 +27,7 @@ header {
     background-color: transparent;
     border: 2px solid #22254b;
     border-radius: 50px;
-    color: #22254b;
+    color: #ffffff;
     font-family: inherit;
     font-size: 1.2rem;
     outline: none;
@@ -36,6 +36,7 @@ header {
 
 .movie-container {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -51,10 +52,12 @@ header {
 }
 
 .movie img {
+    height: 400px;
     max-width: 100%;
+    object-fit: cover;
 }
 .movie-info {
-    max-width: 100%;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
@@ -82,4 +85,23 @@ header {
 
 .movie:hover .movie-over {
     transform: translateX(0%);
+}
+
+.tag {
+    background-color: #22254b;
+    border-radius: 5px;
+    font-size: bold;
+    padding: 0.5rem;
+}
+
+.tag.green{
+    color: green
+}
+
+.tag.orange{
+    color: orange
+}
+
+.tag.red{
+    color: red
 }
